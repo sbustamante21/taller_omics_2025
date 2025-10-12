@@ -1,3 +1,7 @@
 *.csv
-*.pdf
+*.cys
 *.xlsx
+*.tsv
+*.svg
+*.txt
+*.png
