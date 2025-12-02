@@ -1,13 +1,13 @@
 rm(list=ls())
-setwd("/mnt/NFS/mario/projects/AGT-GS/challenge2")
+setwd("C:\\Users\\sebas\\Documents\\taller_omics_2025\\unidad2\\VBS-ML-Genomic-Prediction-main")
 
 require(BGLR)
-pv <- read.csv('Grain.yield_adjusted.csv', stringsAsFactors=F)
-marker <- read.csv("genetic_marker_matrix_M.csv")
+pv <- read.csv('2014_Data/Grain.yield_adjusted.csv', stringsAsFactors=F)
+marker <- read.csv("2014_Data/genetic_marker_matrix_M.csv")
 rownames(marker) <- pv$Genotype
 y <- pv$Adj.Grain.Yield
 
-testID <-read.table("2014_splits/02/testID.txt", header=FALSE, stringsAsFactors=FALSE)
+testID <-read.table("2014_splits/05/testID.txt", header=FALSE, stringsAsFactors=FALSE)
 ID.VEC <- as.numeric(testID[,1])
 ID.VEC <- ID.VEC+1
 y[ID.VEC] <- NA

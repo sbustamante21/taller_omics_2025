@@ -22,19 +22,19 @@ from torch.utils.data import DataLoader
 
 config = {
     ## test set
-    "GenData": False,
+    "GenData": False, # LO HE MODIFICADO VENIA EN FALSE
     'GenDataPerce': 0.1,
     ##
-    'datapath': '/home/python_code/Challenge2/2016_Data',
-    'codepath': '/home/python_code/Challenge2',
-    'epoch': 10000,
+    'datapath': '../2014_Data',
+    'codepath': '.',
+    'epoch': 10000, # o lo que sea
     'lr': 0.0001,
     'batch_size': 4096,
     'half': False,
-    'phase': 'train',
+    'phase': 'test',
 
     # 'checkpoint_path': 'checkpoint/epoch_1.pt',
-    'checkpoint_path': '/home/python_code/Challenge2/checkpoint/epoch_8000.pt',
+    'checkpoint_path': 'checkpoint/best_epoch.pt',
 }
 
 

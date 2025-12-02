@@ -8,7 +8,7 @@ import numpy as np
 class TrainDataSet(Dataset):
     def __init__(self, config):
         self.train_data_path = config['datapath']
-        self.train_list = get_id(Filepath='trainID_1.txt')
+        self.train_list = get_id(Filepath='../2014_Data/trainID_1.txt')
         self.data, self.label = read_data(self.train_data_path)
 
 
@@ -26,7 +26,7 @@ class TrainDataSet(Dataset):
 class TestDataSet(Dataset):
     def __init__(self, config):
         self.test_data_path = config['datapath']
-        self.test_list = get_id(Filepath='testID_1.txt')
+        self.test_list = get_id(Filepath='../2014_Data/testID_1.txt')
         self.data, self.label = read_data(self.test_data_path)
 
 

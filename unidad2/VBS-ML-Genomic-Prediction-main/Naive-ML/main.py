@@ -27,10 +27,10 @@ config = {
     'codepath': '.', # The path for generating the train and test IDs
     'epoch': 10000,
     'lr': 0.00001,
-    'batch_size': 2048,
-    'half': False,
+    'batch_size': 16384,
+    'half': True,
     'Reload': False,
-    'phase': 'train',
+    'phase': 'test',  # 'train' or 'test'
     'checkpoint_path': 'checkpoint/epoch_10000.pt' # The model path, it can be modified to any model in the 'checkpoint' folder
 }
 

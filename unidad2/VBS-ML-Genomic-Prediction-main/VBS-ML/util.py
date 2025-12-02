@@ -4,7 +4,7 @@ import torch
 
 
 
-def Gen_Data_id(FilePath='/home/ssd_2t/adl/code', TotalSamples=10375, Percentage=0.1):
+def Gen_Data_id(FilePath='/mnt/c/Users/sebas/Documents/taller_omics_2025/unidad2/VBS-ML-Genomic-Prediction-main/VBS-ML', TotalSamples=10375, Percentage=0.1):
 
     # test
     Ts_index = random.sample(range(0, TotalSamples), int(TotalSamples * Percentage))

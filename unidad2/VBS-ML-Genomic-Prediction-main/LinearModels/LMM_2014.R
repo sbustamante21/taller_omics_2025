@@ -1,6 +1,9 @@
 require(asreml)
-pv <- read.csv('Grain.yield_adjusted.csv', stringsAsFactors=F)
-marker <- read.csv("genetic_marker_matrix_M.csv")
+
+setwd("C:\\Users\\sebas\\Documents\\taller_omics_2025\\unidad2\\VBS-ML-Genomic-Prediction-main")
+
+pv <- read.csv('2014_Data/Grain.yield_adjusted.csv', stringsAsFactors=F)
+marker <- read.csv("2014_Data/genetic_marker_matrix_M.csv")
 rownames(marker) <- pv$Genotype
 trainID <- read.table("2014_splits/01/trainID.txt", header=FALSE, stringsAsFactors=FALSE)
 ID.VEC <- as.numeric(trainID[,1])
